@@ -5,9 +5,9 @@ function Bio() {
     <section className='w-full flex justify-start items-center flex-col text-center text-black dark:text-green-400'>
       <div className='w-20 h-20 mb-2'>
         <img
-          src='/me.png'
+          src='/profile-picture.jpg'
           alt='Picture of Jamie'
-          className='w-full h-full rounded-full border-black border-2'
+          className='w-full h-full rounded-full border-black dark:border-green-400 border-2'
         />
       </div>
 
