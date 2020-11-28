@@ -26,24 +26,24 @@ const SOCIAL_LINKS = [
 
 function Social() {
   return (
-    <div className='mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3'>
+    <section className='mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3'>
       {SOCIAL_LINKS.map((socialLink) => (
         <div key={socialLink.key} className='w-full relative group'>
           <a
             href={socialLink.url}
             target='_blank'
             rel='noreferrer'
-            className='w-full z-20 relative bg-white dark:bg-black text-black hover:text-blue-500 dark:text-green-400 dark:hover:text-green-200 p-2 border border-black dark:border-green-400 rounded-sm flex justify-center items-center transition-transform ease-out transform-gpu translate-x-0 translate-y-0 group-hover:-translate-x-0.25 group-hover:-translate-y-0.25'
+            className='w-full z-20 relative bg-white dark:bg-black text-black hover:text-blue-500 dark:text-green-400 dark:hover:text-green-200 p-2 border border-black dark:border-green-400 rounded-sm flex justify-center items-center transition-all ease-out transform-gpu translate-x-0 translate-y-0 group-hover:-translate-x-0.25 group-hover:-translate-y-0.25 focus:outline-none focus:ring-2 ring-blue-500 dark:ring-green-200 ring-offset-2 ring-offset-white dark:ring-offset-black'
           >
             {socialLink.icon}
 
             <span className='text-sm pl-2 font-medium'>{socialLink.name}</span>
           </a>
 
-          <div className='w-full h-full inset-0 absolute z-10 bg-black dark:bg-green-400 rounded-sm transition-transform ease-out transform-gpu origin-top-left translate-x-0.5 translate-y-0.5 group-hover:translate-x-0.75 group-hover:translate-y-0.75' />
+          <div className='w-full h-full inset-0 absolute z-10 bg-black dark:bg-green-400 group-hover:bg-blue-500 dark:group-hover:bg-green-200 rounded-sm transition-all ease-out transform-gpu origin-top-left translate-x-0.5 translate-y-0.5 group-hover:translate-x-0.75 group-hover:translate-y-0.75' />
         </div>
       ))}
-    </div>
+    </section>
   );
 }
 
