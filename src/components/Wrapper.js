@@ -8,7 +8,7 @@ function Wrapper({ children }) {
           {children}
         </div>
 
-        <div className='w-full h-full inset-0 absolute z-10 bg-black rounded-sm transform translate-x-1 translate-y-1' />
+        <div className='w-full h-full inset-0 absolute z-10 bg-black rounded-sm transform translate-x-0.75 translate-y-0.75' />
       </div>
     </div>
   );
