@@ -19,7 +19,7 @@ const SOCIAL_LINKS = [
   {
     key: 'twitter',
     name: 'Twitter',
-    url: 'https://twitter.com/jgmcelwain',
+    url: 'https://twitter.com/mcelwain_jamie',
     icon: <Twitter size={ICON_SIZE} />,
   },
 ];
