@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app';
 
 import Head from 'next/head';
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -36,5 +36,3 @@ function MyApp({ Component, pageProps }: AppProps) {
     </>
   );
 }
-
-export default MyApp;

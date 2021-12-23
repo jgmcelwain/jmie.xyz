@@ -1,9 +1,7 @@
-import type { NextPage } from 'next';
-
 import Bio from '@/components/Bio.server';
 import SocialLinks from '@/components/SocialLinks.server';
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
     <div>
       <div className='flex items-start justify-center w-full h-full min-h-screen p-4 min-w-screen sm:items-center sm:p-0'>
@@ -19,6 +17,4 @@ const Home: NextPage = () => {
       </div>
     </div>
   );
-};
-
-export default Home;
+}
