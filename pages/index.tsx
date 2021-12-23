@@ -4,7 +4,7 @@ import SocialLinks from '@/components/SocialLinks.server';
 export default function Home() {
   return (
     <div>
-      <div className='flex items-start justify-center w-full h-full min-h-screen p-4 min-w-screen sm:items-center sm:p-0'>
+      <div className='flex items-start justify-center w-full h-full min-h-screen p-4 min-h-screen-ios min-w-screen sm:items-center sm:p-0'>
         <div className='relative w-full max-w-md transform translate-0 sm:-translate-y-10'>
           <div className='relative z-20 w-full p-4 bg-white border border-black rounded-sm dark:bg-black dark:border-green-400'>
             <Bio />
