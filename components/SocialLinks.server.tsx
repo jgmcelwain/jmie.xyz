@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { GitHub, Linkedin, Twitter } from 'react-feather';
 
 const ICON_SIZE = 18;
@@ -24,11 +22,11 @@ const SOCIAL_LINKS = [
   },
 ];
 
-function Social() {
+export default function SocialLinks() {
   return (
-    <section className='mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3'>
+    <section className='grid grid-cols-1 gap-3 mt-4 sm:grid-cols-3'>
       {SOCIAL_LINKS.map((socialLink) => (
-        <div key={socialLink.key} className='w-full relative group'>
+        <div key={socialLink.key} className='relative w-full group'>
           <a
             href={socialLink.url}
             target='_blank'
@@ -37,7 +35,7 @@ function Social() {
           >
             {socialLink.icon}
 
-            <span className='text-sm pl-2 font-medium'>{socialLink.name}</span>
+            <span className='pl-2 text-sm font-medium'>{socialLink.name}</span>
           </a>
 
           <div className='w-full h-full inset-0 absolute z-10 bg-black dark:bg-green-400 group-hover:bg-blue-500 dark:group-hover:bg-green-200 rounded-sm transition-all ease-out transform-gpu origin-top-left translate-x-0.5 translate-y-0.5 group-hover:translate-x-0.75 group-hover:translate-y-0.75' />
@@ -46,5 +44,3 @@ function Social() {
     </section>
   );
 }
-
-export default Social;

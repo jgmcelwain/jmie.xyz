@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .polka {
+    background-color: #f9fafb;
+    background-image: radial-gradient(#000000 0.55px, transparent 0.55px),
+      radial-gradient(#000000 0.55px, #f9fafb 0.55px);
+    background-size: 22px 22px;
+    background-position: 0 0, 11px 11px;
+  }
+  .polka-dark {
+    background-color: #000000;
+    background-image: radial-gradient(#064e3b 0.55px, transparent 0.55px),
+      radial-gradient(#064e3b 0.55px, #000000 0.55px);
+    background-size: 22px 22px;
+    background-position: 0 0, 11px 11px;
+  }
+}
+
+@layer base {
+  body {
+    @apply polka dark:polka-dark;
+  }
+}
