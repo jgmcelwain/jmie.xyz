@@ -23,7 +23,7 @@ export default function Bio() {
           href='https://chooseesteem.com'
           target='_blank'
           rel='noreferrer'
-          className='underline rounded-sm hover:text-blue-500 dark:hover:text-green-200 focus:outline-none focus:ring ring-blue-300 dark:ring-green-200 ring-offset-1 ring-offset-white dark:ring-offset-black'
+          className='underline rounded-sm hover:text-blue-500 dark:hover:text-green-200 focus:outline-none focus:ring-2 ring-blue-500 dark:ring-green-200 ring-offset-2 ring-offset-white dark:ring-offset-black'
         >
           Esteem
         </a>
