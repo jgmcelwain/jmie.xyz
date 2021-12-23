@@ -27,6 +27,7 @@ export default function Bio() {
         >
           Esteem
         </a>
+        .
       </p>
     </section>
   );
