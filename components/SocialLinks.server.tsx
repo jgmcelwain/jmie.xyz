@@ -31,14 +31,14 @@ export default function SocialLinks() {
             href={socialLink.url}
             target='_blank'
             rel='noreferrer'
-            className='w-full z-20 relative bg-white dark:bg-black text-black hover:text-blue-500 dark:text-green-400 dark:hover:text-green-200 p-2 border border-black dark:border-green-400 rounded-sm flex justify-center items-center transition-all ease-out transform-gpu translate-x-0 translate-y-0 group-hover:-translate-x-[1px] group-hover:-translate-y-[1px] focus-ring'
+            className='w-full z-20 relative bg-white dark:bg-black text-black hover:text-blue-500 dark:text-green-400 dark:hover:text-green-200 p-2 border border-black dark:border-green-400 rounded-lg flex justify-center items-center transition-all ease-out transform-gpu translate-x-0 translate-y-0 group-hover:-translate-x-[1px] group-hover:-translate-y-[1px] focus-ring'
           >
             {cloneElement(socialLink.icon, { size: 18 })}
 
             <span className='pl-2 text-sm font-medium'>{socialLink.name}</span>
           </a>
 
-          <div className='w-full h-full inset-0 absolute z-10 bg-black dark:bg-green-400 group-hover:bg-blue-500 dark:group-hover:bg-green-200 rounded-sm transition-all ease-out transform-gpu origin-top-left translate-x-0.5 translate-y-0.5 group-hover:translate-x-[3px] group-hover:translate-y-[3px]' />
+          <div className='w-full h-full inset-0 absolute z-10 bg-black dark:bg-green-400 group-hover:bg-blue-500 dark:group-hover:bg-green-200 rounded-lg transition-all ease-out transform-gpu origin-top-left translate-x-0.5 translate-y-0.5 group-hover:translate-x-[3px] group-hover:translate-y-[3px]' />
         </div>
       ))}
     </section>
