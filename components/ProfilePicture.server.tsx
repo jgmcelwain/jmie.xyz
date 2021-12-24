@@ -15,6 +15,8 @@ export default function ProfilePicture() {
 
       <a
         href='mailto:jmie@hey.com'
+        target='_blank'
+        rel='noreferrer'
         className='group absolute bottom-0 right-0 z-30 flex items-center justify-center w-8 h-8 leading-none transform translate-x-1.5 translate-y-1.5 bg-white border-2 border-black rounded-full focus-ring dark:bg-black dark:border-green-400 hover:scale-105 origin-bottom-right transition-transform'
         aria-label='Email Jamie'
       >
