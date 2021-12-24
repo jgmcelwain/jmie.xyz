@@ -32,6 +32,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
         <title>Jamie McElwain - Frontend Developer</title>
       </Head>
+
       <Component {...pageProps} />
     </>
   );
