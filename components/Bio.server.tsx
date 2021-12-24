@@ -5,7 +5,9 @@ export default function Bio() {
     <section className='flex flex-col items-center justify-start w-full text-center text-black dark:text-green-400'>
       <ProfilePicture />
 
-      <h3 className='text-xl font-semibold'>Jamie McElwain</h3>
+      <h3 className='flex items-center justify-center space-x-2 text-xl font-semibold'>
+        <span>Jamie McElwain</span>
+      </h3>
 
       <p className='text-sm'>
         Frontend Developer at{' '}

@@ -1,5 +1,5 @@
 import { cloneElement } from 'react';
-import { GitHub, Linkedin, Twitter } from 'react-feather';
+import { GitHub, Linkedin, Mail, Twitter } from 'react-feather';
 
 const SOCIAL_LINKS = [
   {
@@ -15,6 +15,12 @@ const SOCIAL_LINKS = [
     icon: <Linkedin />,
   },
   {
+    key: 'email',
+    name: 'Email',
+    url: 'mailto:jmie@hey.com',
+    icon: <Mail />,
+  },
+  {
     key: 'twitter',
     name: 'Twitter',
     url: 'https://twitter.com/jgmcelwain',
@@ -24,7 +30,7 @@ const SOCIAL_LINKS = [
 
 export default function SocialLinks() {
   return (
-    <section className='grid grid-cols-1 gap-3 mt-4 sm:grid-cols-3'>
+    <section className='grid grid-cols-1 gap-3 mt-4 sm:grid-cols-2'>
       {SOCIAL_LINKS.map((socialLink) => (
         <div key={socialLink.key} className='relative w-full group'>
           <a
