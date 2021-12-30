@@ -24,6 +24,12 @@ export default function App({ Component, pageProps }: AppProps) {
 
         <link rel='stylesheet' href='https://rsms.me/inter/inter.css' />
 
+        <script
+          defer
+          data-domain='jmie.xyz'
+          src='https://plausible.io/js/plausible.js'
+        ></script>
+
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta
           name='description'
