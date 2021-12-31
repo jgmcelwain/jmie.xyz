@@ -30,7 +30,7 @@ const SOCIAL_LINKS = [
 
 export default function SocialLinks() {
   return (
-    <section className='grid grid-cols-1 gap-3 mt-4 sm:grid-cols-2'>
+    <section className='grid grid-cols-1 gap-3 mt-4 xs:grid-cols-2'>
       {SOCIAL_LINKS.map((socialLink) => (
         <div key={socialLink.key} className='relative w-full group'>
           <a
